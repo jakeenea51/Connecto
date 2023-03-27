@@ -1,5 +1,7 @@
 # Connecto
 
+![logo](https://user-images.githubusercontent.com/91490989/228013493-3f139c52-031f-4c7f-bd29-d4ec3a055d78.png)
+
 ## Contents
 
 - [Description](#description)
