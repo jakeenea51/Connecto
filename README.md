@@ -38,6 +38,7 @@ Created by: [John Royal](https://github.com/john-royal), [Jake Enea](https://git
 
 ## Technologies
 
+- [GPT-3.5 Turbo](https://platform.openai.com/docs/guides/chat)
 - [Express](https://expressjs.com/)
 - [NodeJS](https://nodejs.org/en/)
 - [React](https://reactjs.org/)
