@@ -1,30 +1,40 @@
-# connecto
+# Connecto
 
-## Table of contents
+## Contents
 
-- [Introduction](#Introduction)
-- [Design](#Design)
-- [Features](#Features)
-- [Technologies](#Technologies)
-- [Setup](#Setup)
-- [Credits](#Credits)
+- [Description](#description)
+- [Features](#features)
+- [Design](#design)
+- [Technologies](#technologies)
+- [Local setup](#local-setup)
 
-## Introduction
+## Description
 
-Omnichannel messaging platform for businesses
+Connecto is an omnichannel customer support messaging solution focused on providing a fast, flexible, and effective customer and employee experience.
+
+Created by: [John Royal](https://github.com/john-royal), [Jake Enea](https://github.com/jakeenea51), and [Nathaniel Mention](https://github.com/NathanielMention)
+
+
+## Features
+- __Janet__ - customer support chatbot powered by GPT-3.5 Turbo
+- Individualized real-time chat rooms, accessible by all administrators
+- Support for sending image attachments and sharing location
+- Flexibility to message via SMS and email
+- Profile pictures powered by Gravatar
+- Secure sign-up and sign-in functionality
+
 
 ## Design
 
-## Features
+### Sign-in
+![image](https://user-images.githubusercontent.com/91490989/228003337-1ab7d538-721e-4d66-b2db-46b8c7b13ec9.png)
 
-A few things that you can do on connecto:
+### Admin dashboard
+![image](https://user-images.githubusercontent.com/91490989/228003807-5c1cb547-08cc-4321-b2ee-91a039be1ac7.png)
 
-- Securely authenticate and log in as a customer or administrator to access the platform
-- Effortlessly communicate with the administrator by sending and receiving email messages directly within the application
-- Seamlessly connect with others via an in-app messaging system for real-time chat and collaboration
-- Conveniently locate and share live location information with ease
-- Capture moments and share them with others by taking and uploading photos directly within the platform
-- Quickly reach out to the administrator by sending messages directly to their phone number from within the application
+### Customer support chat
+![image](https://user-images.githubusercontent.com/91490989/228004803-d4af874f-2a2e-467c-9df1-bc87b6775f29.png)
+
 
 ## Technologies
 
@@ -35,23 +45,22 @@ A few things that you can do on connecto:
 - [TypeScript](https://www.typescriptlang.org/)
 - [Amazon Web Services](https://docs.aws.amazon.com/iam/index.html?nc2=h_ql_doc_iam)
 
-## Setup
+## Local setup
 
-Clone or download the repository:
-
-`git clone https://github.com/NathanielMention/connecto`
-
-In the backend directory:
-
-Before you get started, you might want to download [pnpm](https://pnpm.io/) if you haven’t already. This project has not been tested with NPM or Yarn.
-
-First, install dependencies:
+### Clone repository:
 
 ```
+git clone https://github.com/jakeenea51/Connecto
+```
+
+### Install backend dependencies:
+
+```
+cd backend
 pnpm install
 ```
 
-Then, create a `.env` file in the root directory of the project. You can use the `.env.example` file as a template:
+### Copy `.env.example` to create your `.env` file:
 
 ```
 cp .env.example .env
@@ -59,42 +68,27 @@ cp .env.example .env
 
 You’ll want to generate random, 32-character strings for both the `SESSION_SECRET` and `JWT_SECRET` variables. You can use [this tool](https://1password.com/password-generator/) to generate those values.
 
-Next, set up the database:
+### Set up database:
 
 ```
 pnpm exec prisma db push
 ```
 
-For now, we’re using a SQLite database stored locally on your machine. In the future, we’ll switch to a cloud database.
-
-Finally, start the development server:
+### Start the backend development server:
 
 ```
 pnpm dev
 ```
 
-To run tests:
+### Install frontend dependencies:
 
 ```
-pnpm test
-```
-
-In the frontend directory:
-
-First, install dependencies:
-
-```
+cd frontend
 pnpm install
 ```
 
-Finally, start the frontend:
+### Start the frontend development server:
 
 ```
 pnpm dev
 ```
-
-## Credits
-
-Geocoding and location services powered by [Google Maps](https://mapsplatform.google.com/maps-products/#geocoding)
-
-Customer service chat bot powered by [GPT-3.5](https://platform.openai.com/docs/guides/chat)
